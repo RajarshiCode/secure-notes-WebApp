@@ -9,4 +9,14 @@ public class HelloController {
     public String sayHello(){
         return "Hello";
     }
+
+    @GetMapping("/contact")
+    public String sayContact(){
+        return "Contact";
+    }
+
+//    @GetMapping("/admin")
+//    public String sayAdmin(){
+//        return "Admin";
+//    }
 }
