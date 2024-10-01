@@ -13,13 +13,13 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/admin")
-//@PreAuthorize("hasRole('ROLE_ADMIN')") // class level
+@PreAuthorize("hasRole('ROLE_ADMIN')")
 public class AdminController {
 
     @Autowired
     UserService userService;
 
-    //@PreAuthorize("hasRole('ROLE_ADMIN')") //method level
+
     @GetMapping("/getusers")
     public ResponseEntity<List<User>> getAllUsers() {
         return new ResponseEntity<>(userService.getAllUsers(), HttpStatus.OK);
@@ -31,7 +31,7 @@ public class AdminController {
         userService.updateUserRole(userId, roleName);
         return ResponseEntity.ok("User role updated");
     }
-    //@PreAuthorize("hasRole('ROLE_ADMIN')")
+
     @GetMapping("/user/{id}")
     public ResponseEntity<UserDTO> getUser(@PathVariable Long id) {
         return new ResponseEntity<>(userService.getUserById(id), HttpStatus.OK);
