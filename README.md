@@ -7,7 +7,8 @@
 #### type of malicious exploit of a website where unauthorized commands are transmitted on the behalf user, where a third party site is making a request.
 
 ---
-### JWT Authentication -> `JSON Web Token Authentication` #### [*encode/decode jwt*](https://jwt.io/)
+### JWT Authentication -> `JSON Web Token Authentication`
+- #### [*encode/decode jwt*](https://jwt.io/)
 ----
 <!-- - #### without jwt
   - no expiration time, 
