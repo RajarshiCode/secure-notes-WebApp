@@ -6,9 +6,10 @@
 ### CSRF -> `Cross-Site Request Forgery`
 #### type of malicious exploit of a website where unauthorized commands are transmitted on the behalf user, where a third party site is making a request.
 
----
+--------
 ### JWT Authentication -> `JSON Web Token Authentication`
 - #### [*encode/decode jwt*](https://jwt.io/)
+- #### [*jwt maven dependencies*](https://github.com/jwtk/jjwt)
 ----
 <!-- - #### without jwt
   - no expiration time, 
@@ -18,3 +19,6 @@
   - Hi
   - Hi
   - Hi -->
+  
+
+
