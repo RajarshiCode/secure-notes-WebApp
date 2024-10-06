@@ -173,6 +173,7 @@ public class AuthController {
             userService.generatePasswordResetToken(email);
             return ResponseEntity.ok(new MessageResponse("Password reset mail sent!"));
         }catch (Exception e){
+            e.printStackTrace();
                 return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
                         .body(new MessageResponse("Error sending password reset mail!"));
 
@@ -180,6 +181,8 @@ public class AuthController {
 
 
     }
+
+
 
 
 }
