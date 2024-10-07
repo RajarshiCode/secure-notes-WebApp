@@ -8,7 +8,7 @@ import java.time.Instant;
 
 @Entity
 @Data
-@NoArgsConstructor
+@NoArgsConstructor // faced an error for this
 public class PasswordResetToken {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

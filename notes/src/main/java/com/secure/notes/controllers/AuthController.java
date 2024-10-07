@@ -173,16 +173,21 @@ public class AuthController {
             userService.generatePasswordResetToken(email);
             return ResponseEntity.ok(new MessageResponse("Password reset mail sent!"));
         }catch (Exception e){
-            e.printStackTrace();
+            //e.printStackTrace();
                 return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
                         .body(new MessageResponse("Error sending password reset mail!"));
-
         }
-
-
     }
 
-
-
-
+    @PostMapping("/public/reset-password")
+    public ResponseEntity<?> resetPassword(@RequestParam String token, @RequestParam String newPassword){
+        try{
+            userService.resetPassword(token, newPassword);
+            return ResponseEntity.ok(new MessageResponse("Password reset Successful!"));
+        }catch (Exception e){
+            //e.printStackTrace();
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST)
+                    .body(new MessageResponse(e.getMessage()));
+        }
+    }
 }
