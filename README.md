@@ -1,10 +1,10 @@
-# Secure Notes WebApplication using SpringBoot and Spring Secuirty Secuity 6
+# Secure Notes WebApplication using SpringBoot and Spring Security 6
 
 ### EER DIAGRAM
 ![EER DIAGRAM](eerDiagram2.png "EER DIAGRAM")
 --
 ### CSRF -> `Cross-Site Request Forgery`
-#### type of malicious exploit of a website where unauthorized commands are transmitted on the behalf user, where a third party site is making a request.
+#### type of malicious exploit of a website where unauthorized commands are transmitted on behalf user, where a third-party site is making a request.
 
 --------
 ### JWT Authentication -> `JSON Web Token Authentication`
