@@ -11,6 +11,8 @@
 - #### [*encode/decode jwt*](https://jwt.io/)
 - #### [*jwt maven dependencies*](https://github.com/jwtk/jjwt)
 ----
+
+[![RajarshiCode/secure-notes-WebApp - GitHub](https://gh-card.dev/repos/RajarshiCode/secure-notes-WebApp.svg?fullname=)](https://github.com/RajarshiCode/secure-notes-WebApp)
 <!-- - #### without jwt
   - no expiration time, 
   - can be decoded easily  
