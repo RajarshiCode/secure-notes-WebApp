@@ -36,4 +36,12 @@ public interface UserService {
 
 
     User registerUser(User user);
+
+     GoogleAuthenticatorKey generate2FASecret(Long userId);
+
+    boolean validate2FACode(Long userId, int code);
+
+    void enable2FA(Long userId);
+
+    void disable2FA(Long userId);
 }
