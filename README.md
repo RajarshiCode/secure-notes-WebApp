@@ -1,4 +1,5 @@
 # Secure Notes WebApplication using SpringBoot and Spring Security 6
+#### This is a Note taking WebApplication which is very secure and handy, consists of username and password authtentication for users. Users can reset password anytime using `Forget Password` functionality. For enhanced security user can opt for `Multifactor Authtentication` using `Google Authenticator` in their mobile devices. Therefore providing a secured environment with 2 step verification during sigin. 
 
 ### EER DIAGRAM
 ![EER DIAGRAM](eerDiagram2.png "EER DIAGRAM")
