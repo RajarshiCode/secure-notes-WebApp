@@ -24,5 +24,7 @@
 
   ### Multi-Factor Authentication (MFA)
   - #### using Google authenticator
+### Authentication with GitHub
+![gitauth](gitauth.jpeg "gitauth") 
 
 
